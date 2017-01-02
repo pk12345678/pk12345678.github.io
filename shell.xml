@@ -1,0 +1,212 @@
+Windows PowerShell
+Copyright (C) 2012 Microsoft Corporation. All rights reserved.
+
+C:\Users\pkradhak\Documents\GitHub> echo"#pk12345678.github.io" >>README>md
+echo#pk12345678.github.io : The term 'echo#pk12345678.github.io' is not
+recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify
+that the path is correct and try again.
+At line:1 char:1
++ echo"#pk12345678.github.io" >>README>md
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (echo#pk12345678.github.io:Strin
+   g) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+C:\Users\pkradhak\Documents\GitHub> echo "#pk12345678.github.io">>README.md
+C:\Users\pkradhak\Documents\GitHub> git init
+Initialized empty Git repository in C:/Users/pkradhak/Documents/GitHub/.git/
+C:\Users\pkradhak\Documents\GitHub [master +3 ~0 -0 !]> git add README.md
+C:\Users\pkradhak\Documents\GitHub [master +1 ~0 -0 | +2 ~0 -0 !]> git commit -m
+ "first commit"
+[master (root-commit) aae2935] first commit
+ Committer: pk12345678 <pkradhak@PKRADHAK-PC.idc.oracle.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+C:\Users\pkradhak\Documents\GitHub [master +2 ~0 -0 !]> git remote add origin ht
+tps://github.com/pk12345678/pk12345678.github.io.git
+C:\Users\pkradhak\Documents\GitHub [master +2 ~0 -0 !]> git push -u origin maste
+r
+fatal: unable to access 'https://github.com/pk12345678/pk12345678.github.io.git/
+': Failed to connect to github.com port 443: Timed out
+C:\Users\pkradhak\Documents\GitHub [master +2 ~0 -0 !]>
+C:\Users\pkradhak\Documents\GitHub [master +2 ~0 -0 !]>
+C:\Users\pkradhak\Documents\GitHub [master +2 ~0 -0 !]>
+C:\Users\pkradhak\Documents\GitHub [master +2 ~0 -0 !]>
+C:\Users\pkradhak\Documents\GitHub [master +2 ~0 -0 !]> git push -u origin maste
+r
+fatal: unable to access 'https://github.com/pk12345678/pk12345678.github.io.git/
+': Failed to connect to github.com port 443: Timed out
+C:\Users\pkradhak\Documents\GitHub [master +2 ~0 -0 !]> git config --global http
+.proxy https://pk12345678:Richard20@proxy.us.oracle.com:443
+C:\Users\pkradhak\Documents\GitHub [master +2 ~0 -0 !]> git push -u origin maste
+r
+fatal: unable to access 'https://github.com/pk12345678/pk12345678.github.io.git/
+': Couldn't resolve proxy 'proxy.us.oracle.com'
+C:\Users\pkradhak\Documents\GitHub [master +2 ~0 -0 !]> git config --global http
+.proxy https://pk12345678:Richard20@www-proxy-idc.in.oracle.com:80
+C:\Users\pkradhak\Documents\GitHub [master +2 ~0 -0 !]> git push -u origin maste
+r
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 277 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/pk12345678/pk12345678.github.io.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+C:\Users\pkradhak\Documents\GitHub [master ≡ +2 ~0 -0 !]> git push -u origin mas
+ter
+Branch master set up to track remote branch master from origin.
+Everything up-to-date
+C:\Users\pkradhak\Documents\GitHub [master ≡ +2 ~0 -0 !]> git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Github.doc
+        Quacpy/
+        index.html
+        pk12345678.github.io/
+        ~$Github.doc
+
+nothing added to commit but untracked files present (use "git add" to track)
+C:\Users\pkradhak\Documents\GitHub [master ≡ +5 ~0 -0 !]> git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Github.doc
+        Javascript/
+        Quacpy/
+        index.html
+        pk12345678.github.io/
+        ~$Github.doc
+
+nothing added to commit but untracked files present (use "git add" to track)
+C:\Users\pkradhak\Documents\GitHub [master ≡ +6 ~0 -0 !]> git add Javascript/*
+C:\Users\pkradhak\Documents\GitHub [master ≡ +1 ~0 -0 | +5 ~0 -0 !]> git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Javascript/myScript.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Github.doc
+        Quacpy/
+        index.html
+        pk12345678.github.io/
+        ~$Github.doc
+
+C:\Users\pkradhak\Documents\GitHub [master ≡ +1 ~0 -0 | +5 ~0 -0 !]> git commit
+-m 'Added Javascript'
+[master d3a9f91] Added Javascript
+ Committer: pk12345678 <pkradhak@PKRADHAK-PC.idc.oracle.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Javascript/myScript.js
+C:\Users\pkradhak\Documents\GitHub [master ↑ +5 ~0 -0 !]> git push -u origin mas
+ter
+To https://github.com/pk12345678/pk12345678.github.io.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/pk12345678/pk12345678.git
+hub.io.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+C:\Users\pkradhak\Documents\GitHub [master ↑ +5 ~0 -0 !]> git pull origin master
+
+remote: Counting objects: 15, done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 15 (delta 5), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (15/15), done.
+From https://github.com/pk12345678/pk12345678.github.io
+ * branch            master     -> FETCH_HEAD
+   aae2935..2f39dff  master     -> origin/master
+error: The following untracked working tree files would be overwritten by merge:
+
+        index.html
+Please move or remove them before you merge.
+Aborting
+C:\Users\pkradhak\Documents\GitHub [master ↕ +5 ~0 -0 !]> git push -u origin mas
+ter
+To https://github.com/pk12345678/pk12345678.github.io.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/pk12345678/pk12345678.git
+hub.io.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+C:\Users\pkradhak\Documents\GitHub [master ↕ +5 ~0 -0 !]> git config --global us
+er.name "pk12345678"
+C:\Users\pkradhak\Documents\GitHub [master ↕ +5 ~0 -0 !]> git config --global us
+er.email rparvathykrishna@gmail.com
+C:\Users\pkradhak\Documents\GitHub [master ↕ +5 ~0 -0 !]> git push -u origin mas
+ter
+To https://github.com/pk12345678/pk12345678.github.io.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/pk12345678/pk12345678.git
+hub.io.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+C:\Users\pkradhak\Documents\GitHub [master ↕ +5 ~0 -0 !]> git pull origin master
+
+From https://github.com/pk12345678/pk12345678.github.io
+ * branch            master     -> FETCH_HEAD
+error: The following untracked working tree files would be overwritten by merge:
+
+        index.html
+Please move or remove them before you merge.
+Aborting
+C:\Users\pkradhak\Documents\GitHub [master ↕ +5 ~0 -0 !]> git pull origin master
+
+From https://github.com/pk12345678/pk12345678.github.io
+ * branch            master     -> FETCH_HEAD
+error: The following untracked working tree files would be overwritten by merge:
+
+        index.html
+Please move or remove them before you merge.
+Aborting
+C:\Users\pkradhak\Documents\GitHub [master ↕ +5 ~0 -0 !]> git push -u origin mas
+ter
+To https://github.com/pk12345678/pk12345678.github.io.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/pk12345678/pk12345678.git
+hub.io.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+C:\Users\pkradhak\Documents\GitHub [master ↕ +5 ~0 -0 !]>
+C:\Users\pkradhak\Documents\GitHub [master ↕ +5 ~0 -0 !]>
+C:\Users\pkradhak\Documents\GitHub [master ↕ +5 ~0 -0 !]>
