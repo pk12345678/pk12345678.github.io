@@ -1,1 +1,0 @@
-console.log("Smart".substring(0,2))
