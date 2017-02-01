@@ -1,0 +1,66 @@
+.something{
+	/*float: left;*/
+    margin: 5px;
+    padding: 15px;
+	font-family: verdana;
+    max-width: 300px;
+    height: 300px;
+    /**border: 1px solid black;*/
+}
+.beach{
+padding :10px;
+}
+.imageStyle{
+width:1248px;
+height:500px;
+position: relative;
+margin: auto;
+}
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 250px;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+   right: 0;
+  border-radius: 5px 0 0 5px;
+}
+.next:hover {
+  background-color: rgba(255,255,255, 0.3);
+}
+.container {
+  max-width: 400px;
+  background-color: black;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.container div {
+  background-color: white;
+  width: 100%;
+  display: inline-block;
+  display: none;
+}
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  position: absolute;
+}
+
+.next {
+  right: 5px;
+}
+
+.prev {
+  left: 5px;
+}
+h1{color:blue; clear: both;}
+p{color:green;clear: both;}
