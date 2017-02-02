@@ -12,8 +12,9 @@
 	images[0]="Images/beachchairs.jpg";
 	images[1]="Images/shells.jpg";
 	images[2]="Images/positano.jpg";
+	images[3]="Images/beach-image-6.jpg";
 	curImg=0;
-	numImg=3;
+	numImg=4;
     function nextImage(){
 	var im=document.getElementById("demo");
 	if(curImg < (numImg-1)){
@@ -37,8 +38,8 @@
 	
 	}
 	else if(curImg=(-1)){
-	im.src=images[2];
-	curImg=2;
+	curImg=numImg-1;
+	im.src=images[curImg];
 	}
 	else{
 	alert("Finish");
@@ -49,22 +50,25 @@
 </script>
 </head>
 <body>
-<!--p id="demo">Change it</p-->
-<img class="imageStyle" src="Images/beachchairs.jpg" id="demo"></img> 
-<!--span>&#10094;</span-->
 <center>
+<a class="link" href="google.com">Fitness</a>
+<a class="link" href="google.com">Lifestyle</a>
+
+<div class="something">
+<h1>Welcome</h1>
+<p>How are you doing?</p>
+</div>
+</center>
+<!--p id="demo">Change it</p-->
+<center>
+<img  class="imageStyle" src="Images/beachchairs.jpg" id="demo"></img> 
+</center>
+<!--span>&#10094;</span-->
+
 <p>
 <a class="next" onclick="nextImage()" >&#10095;</a>
 <a class="prev"  onclick="prevImage()" >&#10094;</a>
 </p>
-<div class="something">
-<h1>Welcome</h1>
-<p>How are you doing?</p>
-</center>
-</div>
-
-
-
 </body>
 
 </html>

@@ -1,25 +1,37 @@
 .something{
 	/*float: left;*/
     margin: 5px;
-    padding: 15px;
-	font-family: verdana;
-    max-width: 300px;
-    height: 300px;
-    /**border: 1px solid black;*/
+    /*padding: 15px;*/
+	font-family: Freestyle Script;
+	font-size: xx-large;
+    width: auto;
+    /**height: 300px;
+    border: 1px solid black;*/
+}
+.link{
+	padding :10px;
+	text-decoration: none;
+	font-family:Constantia;
+	font-size: medium;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #B6B6B4;
 }
 .beach{
 padding :10px;
 }
 .imageStyle{
-width:1248px;
-height:500px;
+width:1000px;
+height:525px;
 position: relative;
 margin: auto;
+border-radius: 15px 15px 15px 15px;
 }
 .next {
   cursor: pointer;
   position: absolute;
-  top: 250px;
+  top: 375px;
+  right:144px;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -27,13 +39,13 @@ margin: auto;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-   right: 0;
   border-radius: 5px 0 0 5px;
 }
 .prev {
   cursor: pointer;
   position: absolute;
-  top: 250px;
+  top: 375px;
+  left: 144px;
   width: auto;
   margin-top: -22px;
   padding: 16px;
@@ -71,12 +83,12 @@ button {
   position: absolute;
 }
 
-.next {
+/*.next {
   right: 5px;
 }
 
 .prev {
   left: 5px;
-}
-h1{color:blue; clear: both;}
-p{color:green;clear: both;}
+}*/
+h1{color:black;}
+p{color:green;}
