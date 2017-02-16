@@ -45,11 +45,17 @@
 	alert("Finish");
 	}
 	};
+	function showImg(n){
+	var im=document.getElementById("demo");
+	im.src=images[n];
+	};
 
 
 </script>
 </head>
 <body>
+
+
 <center>
 <a class="link" href="google.com">Fitness</a>
 <a class="link" href="google.com">Lifestyle</a>
@@ -69,6 +75,12 @@
 <a class="next" onclick="nextImage()" >&#10095;</a>
 <a class="prev"  onclick="prevImage()" >&#10094;</a>
 </p>
+<div style="text-align:center">
+<a><span class="dot" onclick="showImg(0)"/></a>
+<a><span class="dot" onclick="showImg(1)"/></a>
+<a><span class="dot" onclick="showImg(2)"/></a>
+<a><span class="dot" onclick="showImg(3)"/></a>
+</div>
 </body>
 
 </html>
